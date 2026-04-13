@@ -1,0 +1,178 @@
+/* Styles */
+body {
+    /* Font */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Reset's all the margins and padding */
+    margin: 0;
+    padding: 0;
+    /* One of the color themes that will be used in the Funyon */
+    background-color: azure;
+    /* Changes the text color */
+    color: darkolivegreen;
+    /* Text just looks better centered */
+    text-align: center;
+}
+
+header {
+    /* Second color theme */
+    background-color: darkolivegreen;
+    /* Keeping color theme */
+    color: azure;
+    /* Makes background color bigger */
+    padding: 10px;
+    /* Making sure the text stays centered */
+    text-align: center;
+    /* Needs to be above others in position */
+    z-index: 20;
+}
+
+.storys {
+    /* Gets rid of the * in the links */
+    list-style: none;
+    /* Just reseting */
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    /* Moves the nav under the header */
+    position: absolute;
+    /* Just looks better on the right */
+    right: 0;
+    /* Moves the nave below the header */
+    top: 100px;
+    /* Makes the border go all the way from one side of te screen to the other */
+    width: 100%;
+    /* will stay below the header */
+    z-index: 10;
+}
+
+.storys li {
+    padding: 10px;
+    border-bottom: 2px solid darkolivegreen;
+    text-align: right;
+}
+
+.storys li a {
+    /* Gets rid of the underlines */
+    text-decoration: none;
+    /* Bolds the nav text */
+    font-weight: bold;
+    /* Changing the color */
+    color: darkolivegreen;
+    /* Puts them in blocks */
+    display: block;
+}
+
+main {
+    /* Makes the nav have its own spce */
+    padding-top: 50px;
+}
+
+#story1, #story2 {
+    /* Keeping the background the same */
+    background-color: azure;
+    /* Spacing */
+    padding: 5px;
+    margin: 35px;
+    /* Border */
+    border: 3px solid darkolivegreen;
+    border-radius: 5px;
+}
+
+img {
+    width: 90%;
+    height: 450px;
+}
+
+/* Phone */
+@media screen and (min-width: 576px) {
+    nav {
+        /* Puts the nav back in it orignal plac */
+        position: static;
+        /* Changes its background color to match the header */
+        background: darkolivegreen;
+    }
+    .storys li {
+        /* Centers the nav text */
+        text-align: center;
+        /* Changes their border bottom to azure */
+        border-bottom: 2px solid azure;
+    }
+    .storys li a {
+        /* Changes the nav text color */
+        color: azure;
+    }
+
+    #story1, #story2 {
+        /* Chnages the background color of the story cards */
+        background-color: darkolivegreen;
+        /* Chnages their text color */
+        color: azure;
+        /* Makes their border a different color and styles */
+        border: 2px dashed azure;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    nav {
+        /* Keep the nav there no matter what */
+        position: fixed;
+        /* Puts the nav on the right side of the screen and at the top */
+        right: 0;
+        top: 0;
+        /* Makes the nav more visable */
+        width: 200px;
+        /* Makes the bottom go all the way to the bottom of the page */
+        height: 100%;
+        /* Spaces it out more, lines the bootom border up with the bootom of the header */
+        padding-top: 20px;
+    }
+
+    main {
+        /* Makes the image wider */
+        margin-right: 260px;
+    }
+
+    header {
+        /* Positions the header to the right */
+        margin-right: 205px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav {
+        /* Keep the nav there no matter what */
+        position: fixed;
+        /* Puts the nav to the left side and on the top of the screen */
+        left: 0;
+        top: 0;
+        /* Makes it more visable */
+        width: 200px;
+        /* Make the bottom go all the way down to the bottom of the screen */
+        height: 100%;
+        /* Spaces it out more, lines the bootom border up with the bootom of the header */
+        padding-top: 20px;
+    }
+
+    main {
+        /* Makes the img look wider */
+        margin-left: 260px;
+        width: 75%;
+    }
+
+    #story1, #story2 {
+    /* Keeping the background the same */
+    background-color: azure;
+    /* Border */
+    border: 3px solid darkolivegreen;
+    border-radius: 5px;
+}
+
+    header {
+        /* Position the header to the left */
+        margin-left: 205px;
+        /* Makes the headers background go all the way to the left side of the screen */
+        width: 100%;
+    }
+}
