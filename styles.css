@@ -164,6 +164,8 @@ img {
     #story1, #story2 {
     /* Keeping the background the same */
     background-color: azure;
+    /* Changing the color */
+    color: darkolivegreen;
     /* Border */
     border: 3px solid darkolivegreen;
     border-radius: 5px;
